@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="SQL,MySQL," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="这世上没有fail，只有“not yet”">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DataH&#39;s Blog">
-<meta property="og:url" content="http://datahuang.com/archives/2019/03/index.html">
+<meta name="description" content="21、查询学生平均成绩及其名次（参考）1234567select S,avg,(	select count(*) from (		select S,avg(score) as avg from sc		group by S) a	where a.avg &amp;gt; b.avg)+1 rankfrom (select S,avg(score) as avg from sc group by S) bo">
+<meta name="keywords" content="SQL,MySQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQL经典50题（下）">
+<meta property="og:url" content="http://datahuang.com/2018/03/26/SQL经典50题（下）/index.html">
 <meta property="og:site_name" content="DataH&#39;s Blog">
-<meta property="og:description" content="这世上没有fail，只有“not yet”">
+<meta property="og:description" content="21、查询学生平均成绩及其名次（参考）1234567select S,avg,(	select count(*) from (		select S,avg(score) as avg from sc		group by S) a	where a.avg &amp;gt; b.avg)+1 rankfrom (select S,avg(score) as avg from sc group by S) bo">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-10T02:33:21.283Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DataH&#39;s Blog">
-<meta name="twitter:description" content="这世上没有fail，只有“not yet”">
+<meta name="twitter:title" content="SQL经典50题（下）">
+<meta name="twitter:description" content="21、查询学生平均成绩及其名次（参考）1234567select S,avg,(	select count(*) from (		select S,avg(score) as avg from sc		group by S) a	where a.avg &amp;gt; b.avg)+1 rankfrom (select S,avg(score) as avg from sc group by S) bo">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://datahuang.com/archives/2019/03/"/>
+  <link rel="canonical" href="http://datahuang.com/2018/03/26/SQL经典50题（下）/"/>
 
 
 
 
 
-  <title>归档 | DataH's Blog</title>
+  <title>SQL经典50题（下） | DataH's Blog</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -281,74 +283,321 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 5 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://datahuang.com/2018/03/26/SQL经典50题（下）/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DataH">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DataH's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/03/19/SQL经典50题（下）/" itemprop="url">
-              
-                <span itemprop="name">未命名</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">SQL经典50题（下）</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-19T23:12:08+08:00"
-              content="2019-03-19" >
-          03-19
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-26T21:02:45+08:00">
+                2018-03-26
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/练习/" itemprop="url" rel="index">
+                    <span itemprop="name">练习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/26/SQL经典50题（下）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/26/SQL经典50题（下）/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/03/26/SQL经典50题（下）/" class="leancloud_visitors" data-flag-title="SQL经典50题（下）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                   字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                   分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p><strong>21、查询学生平均成绩及其名次（参考）</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select S,avg,(</span><br><span class="line">	select count(*) from (</span><br><span class="line">		select S,avg(score) as avg from sc</span><br><span class="line">		group by S) a</span><br><span class="line">	where a.avg &gt; b.avg)+1 rank</span><br><span class="line">from (select S,avg(score) as avg from sc group by S) b</span><br><span class="line">order by avg desc</span><br></pre></td></tr></table></figure></p>
+<p><strong>22、查询各科成绩前三名的记录</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">select a.C,a.S,a.score,count(b.score)+1 as rank</span><br><span class="line">from sc a left join sc b</span><br><span class="line">on a.score &lt; b.score and a.C = b.C </span><br><span class="line">group by a.C,a.S</span><br><span class="line">having rank between 1 and 3</span><br><span class="line">order by a.C,a.score desc</span><br></pre></td></tr></table></figure></p>
+<p><strong>23、查询每门课程被选修的学生数</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select C,count(S)</span><br><span class="line">from sc</span><br><span class="line">group by C</span><br></pre></td></tr></table></figure></p>
+<p><strong>24、查询出只有两门课程的全部学生的学号和姓名</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">selec t a.S,a.Sname from student a join (</span><br><span class="line">	select S,count(C) as num from sc </span><br><span class="line">	group by S </span><br><span class="line">	having num = 2) b</span><br><span class="line">on a.S = b.S</span><br></pre></td></tr></table></figure></p>
+<p><strong>25、查询男生、女生人数</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select Ssex,count(distinct S) sum</span><br><span class="line">from student</span><br><span class="line">group by Ssex</span><br></pre></td></tr></table></figure></p>
+<p><strong>26、查询名字中含有”风”字的学生信息</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select *</span><br><span class="line">from student</span><br><span class="line">where Sname like &apos;%风%&apos;</span><br></pre></td></tr></table></figure></p>
+<p><strong>27、查询同名同性学生名单，并统计同名人数</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select Sname,Ssex,count(*) num</span><br><span class="line">from student</span><br><span class="line">group by Sname,Ssex</span><br><span class="line">having num &gt; 1</span><br></pre></td></tr></table></figure></p>
+<p><strong>28、查询1990年出生的学生名单(注：Student表中Sage列的类型是datetime)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select *</span><br><span class="line">from student</span><br><span class="line">where Sage like &apos;1990%&apos;</span><br></pre></td></tr></table></figure></p>
+<p><strong>29、查询每门课程的平均成绩，结果按平均成绩降序排列，平均成绩相同时，按课程编号</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select C,avg(score) avg</span><br><span class="line">from sc</span><br><span class="line">group by C</span><br><span class="line">order by avg desc,C</span><br></pre></td></tr></table></figure></p>
+<p><strong>30、查询平均成绩大于等于85的所有学生的学号、姓名和平均成绩</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">select a.S,b.Sname,a.avg</span><br><span class="line">from (select S,avg(score) avg</span><br><span class="line">	from sc </span><br><span class="line">	group by S) a,student b</span><br><span class="line">where a.S = b.S and a.avg &gt; 85</span><br><span class="line">group by a.S</span><br></pre></td></tr></table></figure></p>
+<p><strong>31、查询课程名称为”数学”，且分数低于60的学生姓名和分数</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select a.Sname,d.score</span><br><span class="line">from student a join (select b.S,c.Cname,b.score</span><br><span class="line">from sc b,course c</span><br><span class="line">where b.C = c.C and Cname = &apos;数学&apos; and score &lt; 60) d</span><br><span class="line">on a.S = d.S</span><br></pre></td></tr></table></figure></p>
+<p><strong>32、查询所有学生的课程及分数情况</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select a.*,b.C,b.score</span><br><span class="line">from student a,sc b</span><br><span class="line">where a.S = b.S</span><br></pre></td></tr></table></figure></p>
+<p><strong>33、查询任何一门课程成绩在70分以上的姓名、课程名称和分数</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select a.Sname,c.Cname,b.score</span><br><span class="line">from student a,sc b,course c</span><br><span class="line">where b.C = c.C and a.S = b.S and b.score &gt; 70</span><br></pre></td></tr></table></figure></p>
+<p><strong>34、查询不及格的课程</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select a.Sname,c.Cname,b.score</span><br><span class="line">from student a,sc b,course c</span><br><span class="line">where b.C = c.C and a.S = b.S and b.score &lt; 60</span><br></pre></td></tr></table></figure></p>
+<p><strong>35、查询课程编号为01且课程成绩在80分以上的学生的学号和姓名</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select a.S,a.Sname</span><br><span class="line">from student a,sc b </span><br><span class="line">where a.S = b.S and b.C = &apos;01&apos; and b.score &gt;= 80</span><br></pre></td></tr></table></figure></p>
+<p><strong>36、求每门课程的学生人数</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select C,count(S) as num </span><br><span class="line">from sc</span><br><span class="line">group by C</span><br></pre></td></tr></table></figure></p>
+<p><strong>37、查询选修”张三”老师所授课程的学生中，成绩最高的学生信息及其成绩</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select a.*,max(e.score) max</span><br><span class="line">from student a left join (select b.S,b.score from sc b,course c,teacher d</span><br><span class="line">	where b.C = c.C and c.T = d.T and d.Tname = &apos;张三&apos;) e</span><br><span class="line">on a.S = e.S</span><br></pre></td></tr></table></figure></p>
+<p><strong>38、查询不同课程成绩相同的学生的学生编号、课程编号、学生成绩(参考)</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select a.* from sc a,sc b</span><br><span class="line">where a.C != b.C and a.score = b.score and a.S = b.S</span><br><span class="line">group by a.C,a.score</span><br></pre></td></tr></table></figure></p>
+<p><strong>39、查询每门功成绩最好的前两名（未完成）</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">select a.S,a.C,a.score from sc as a </span><br><span class="line">left join sc as b </span><br><span class="line">on a.C = b.C and a.score&lt;b.score</span><br><span class="line">group by a.C,a.S</span><br><span class="line">having count(b.score)&lt;2 #比自己成绩高的学生不能多于2个</span><br><span class="line">order by a.C</span><br></pre></td></tr></table></figure></p>
+<p><strong>40、统计每门课程的学生选修人数（超过5人的课程才统计）。要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select C,count(S) as num </span><br><span class="line">from sc</span><br><span class="line">group by C</span><br><span class="line">having count(S) &gt; 5</span><br><span class="line">order by num desc,C</span><br></pre></td></tr></table></figure></p>
+<p><strong>41.检索至少选修两门课程的学生学号</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select S,count(C) num</span><br><span class="line">from sc</span><br><span class="line">group by S</span><br><span class="line">having num &gt;= 2</span><br></pre></td></tr></table></figure></p>
+<p><strong>42、查询选修了全部课程的学生信息</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select a.*,count(b.C) num</span><br><span class="line">from student a,sc b</span><br><span class="line">where a.S = b.S</span><br><span class="line">group by a.S</span><br><span class="line">having num = (select count(distinct C) from course)</span><br></pre></td></tr></table></figure></p>
+<p><strong>43、查询各学生的年龄</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select S,Sname,timestampdiff(year,Sage,now()) as age</span><br><span class="line">from student</span><br></pre></td></tr></table></figure></p>
+<p><strong>44、查询本周过生日的学生</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select *</span><br><span class="line">from student</span><br><span class="line">where week(Sage) = week(now())</span><br></pre></td></tr></table></figure></p>
+<p><strong>45、查询下周过生日的学生</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select *</span><br><span class="line">from student</span><br><span class="line">where week(Sage) = week(now())+1</span><br></pre></td></tr></table></figure></p>
+<p><strong>46、查询本月过生日的学生</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select *</span><br><span class="line">from student</span><br><span class="line">where month(Sage) = month(now())</span><br></pre></td></tr></table></figure></p>
+<p><strong>48、查询下月过生日的学生</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select *</span><br><span class="line">from student</span><br><span class="line">where month(Sage) = month(now())+1</span><br></pre></td></tr></table></figure></p>
+
+      
     </div>
+
+    
+
+    
+    
+    
+    
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>多少都行~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="DataH 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="DataH 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/SQL/" rel="tag"><i class="fa fa-tag"></i> SQL</a>
+          
+            <a href="/tags/MySQL/" rel="tag"><i class="fa fa-tag"></i> MySQL</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/19/SQL经典50题（上）/" rel="next" title="SQL经典50题（上）">
+                <i class="fa fa-chevron-left"></i> SQL经典50题（上）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/15/Coursera机器学习课程笔记_第一周/" rel="prev" title="Coursera机器学习课程笔记_第一周">
+                Coursera机器学习课程笔记_第一周 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -356,6 +605,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -407,7 +663,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -418,7 +674,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -636,6 +892,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
